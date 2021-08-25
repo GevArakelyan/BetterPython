@@ -14,3 +14,8 @@ Windows 64-bit packages of scikit-learn can be accelerated using scikit-learn-in
 
         $ conda install scikit-learn-intelex
         $ python -m sklearnex my_application.py
+# Environment files
+For save/export
+        $ conda env export > environment.yaml
+For create/load
+        $ conda env create -f environment.yaml 
