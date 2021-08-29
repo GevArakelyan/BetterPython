@@ -1,9 +1,10 @@
+# %%
 # Sweep line technique
 # Example -- Intersection of Intervals
 
 # Given n intervals [i,ri) for i = 0, . . . ,n − 1, we wish to find a value x included
 # in a maximum number of intervals. Here is a solution in time O(n log n).
-# %%
+
 import os
 def max_interval_insersect(S):
     B = ([(left, +1) for left, right in S] +

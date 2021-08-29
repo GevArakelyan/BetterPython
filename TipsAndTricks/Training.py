@@ -1,4 +1,7 @@
 # string
+from numpy import append
+
+
 str = "hello Gevorg"
 strlist = list(str)
 print(str)
@@ -13,6 +16,17 @@ print(strfromlist)
 
 # Lists
 
+#%%%
+def append_number(num, numbers=[]):
+    numbers.append(num)
+    print(num) 
+    print(numbers)
+    return numbers
+
+x = append_number(1)
+y = append_number(2)
+
+#%%
 x = [1, 2, 3]
 x[0] = 3
 # we can do this also x.extend([3, True, 'Hi'])
@@ -108,3 +122,7 @@ print(nb_occurrences)
 # for i in range(n):
 #   for j in range(i + 1, n):
 #       yield (L[i], L[j])
+#---------------------------------------------------------------------------------------------------------------
+
+
+# %%
